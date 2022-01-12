@@ -8,10 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var themes: [NintendoTheme] = NintendoRepository.themes
+        
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            TabView {
+                ForEach(0..<themes.count) { index in
+                    NintendoView(theme: themes[index])
+                        .tag(index)
+                }
+            }
+            .ignoresSafeArea()
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+            .onAppear {
+                setupAppearance()
+            }
+        }
     }
+    
+    func setupAppearance() {
+        UIPageControl.appearance().currentPageIndicatorTintColor = .black
+        UIPageControl.appearance().pageIndicatorTintColor = .black.withAlphaComponent(0.2)
+      }
 }
 
 struct ContentView_Previews: PreviewProvider {

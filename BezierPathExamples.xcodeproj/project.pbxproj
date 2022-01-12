@@ -14,6 +14,12 @@
 		8FE648CF278C542F00B67BE7 /* BezierPathExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE648CE278C542F00B67BE7 /* BezierPathExamplesTests.swift */; };
 		8FE648D9278C542F00B67BE7 /* BezierPathExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE648D8278C542F00B67BE7 /* BezierPathExamplesUITests.swift */; };
 		8FE648DB278C542F00B67BE7 /* BezierPathExamplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE648DA278C542F00B67BE7 /* BezierPathExamplesUITestsLaunchTests.swift */; };
+		8FE648E8278C546F00B67BE7 /* UIBezierPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE648E7278C546F00B67BE7 /* UIBezierPath+Extension.swift */; };
+		8FE648EA278C547A00B67BE7 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE648E9278C547A00B67BE7 /* UIColor+extension.swift */; };
+		8FE648EE278C580600B67BE7 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE648ED278C580600B67BE7 /* ShapeView.swift */; };
+		8FE648F0278CA3AF00B67BE7 /* UIBeizerPath+NintendoSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE648EF278CA3AF00B67BE7 /* UIBeizerPath+NintendoSwitch.swift */; };
+		8FE648F6278CB5B700B67BE7 /* NintendoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE648F5278CB5B700B67BE7 /* NintendoView.swift */; };
+		8FE648F8278E12F100B67BE7 /* NintendoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE648F7278E12F100B67BE7 /* NintendoTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		8FE648D4278C542F00B67BE7 /* BezierPathExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BezierPathExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE648D8278C542F00B67BE7 /* BezierPathExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierPathExamplesUITests.swift; sourceTree = "<group>"; };
 		8FE648DA278C542F00B67BE7 /* BezierPathExamplesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierPathExamplesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FE648E7278C546F00B67BE7 /* UIBezierPath+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Extension.swift"; sourceTree = "<group>"; };
+		8FE648E9278C547A00B67BE7 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		8FE648ED278C580600B67BE7 /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
+		8FE648EF278CA3AF00B67BE7 /* UIBeizerPath+NintendoSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBeizerPath+NintendoSwitch.swift"; sourceTree = "<group>"; };
+		8FE648F5278CB5B700B67BE7 /* NintendoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NintendoView.swift; sourceTree = "<group>"; };
+		8FE648F7278E12F100B67BE7 /* NintendoTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NintendoTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,9 @@
 		8FE648BC278C542E00B67BE7 /* BezierPathExamples */ = {
 			isa = PBXGroup;
 			children = (
+				8FE648FD278F332D00B67BE7 /* Themes */,
+				8FE648FC278F332000B67BE7 /* Views */,
+				8FE648FB278F32F200B67BE7 /* Extensions */,
 				8FE648BD278C542E00B67BE7 /* BezierPathExamplesApp.swift */,
 				8FE648BF278C542E00B67BE7 /* ContentView.swift */,
 				8FE648C1278C542F00B67BE7 /* Assets.xcassets */,
@@ -125,6 +140,33 @@
 				8FE648DA278C542F00B67BE7 /* BezierPathExamplesUITestsLaunchTests.swift */,
 			);
 			path = BezierPathExamplesUITests;
+			sourceTree = "<group>";
+		};
+		8FE648FB278F32F200B67BE7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8FE648E9278C547A00B67BE7 /* UIColor+extension.swift */,
+				8FE648EF278CA3AF00B67BE7 /* UIBeizerPath+NintendoSwitch.swift */,
+				8FE648E7278C546F00B67BE7 /* UIBezierPath+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8FE648FC278F332000B67BE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FE648F5278CB5B700B67BE7 /* NintendoView.swift */,
+				8FE648ED278C580600B67BE7 /* ShapeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8FE648FD278F332D00B67BE7 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				8FE648F7278E12F100B67BE7 /* NintendoTheme.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE648EE278C580600B67BE7 /* ShapeView.swift in Sources */,
+				8FE648E8278C546F00B67BE7 /* UIBezierPath+Extension.swift in Sources */,
+				8FE648F0278CA3AF00B67BE7 /* UIBeizerPath+NintendoSwitch.swift in Sources */,
+				8FE648F6278CB5B700B67BE7 /* NintendoView.swift in Sources */,
 				8FE648C0278C542E00B67BE7 /* ContentView.swift in Sources */,
 				8FE648BE278C542E00B67BE7 /* BezierPathExamplesApp.swift in Sources */,
+				8FE648F8278E12F100B67BE7 /* NintendoTheme.swift in Sources */,
+				8FE648EA278C547A00B67BE7 /* UIColor+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
